@@ -4,6 +4,7 @@ import { ProtectedComponent } from './components/protected/protected.component';
 import { HomeComponent } from './components/home/home.component';
 import { AuthGuardService } from './shared/services/authguard.service';
 import { AuthCallbackComponent } from './shared/components/auth-callback/auth-callback.component';
+import { ApiTestComponent } from './components/api-test/api-test.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,11 @@ const routes: Routes = [
   {
     path: 'protected',
     component: ProtectedComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: 'api-test',
+    component: ApiTestComponent,
     canActivate: [AuthGuardService]
   },
   {

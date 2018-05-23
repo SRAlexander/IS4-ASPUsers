@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IS4Server", "IS4Server\IS4S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcClient", "MvcClient\MvcClient.csproj", "{FD717F2C-3450-4109-94E5-751105F6820A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IS4REST", "IS4REST\IS4REST.csproj", "{743D864C-86E1-4E58-9160-CA31F14EF6F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FD717F2C-3450-4109-94E5-751105F6820A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD717F2C-3450-4109-94E5-751105F6820A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD717F2C-3450-4109-94E5-751105F6820A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{743D864C-86E1-4E58-9160-CA31F14EF6F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743D864C-86E1-4E58-9160-CA31F14EF6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743D864C-86E1-4E58-9160-CA31F14EF6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743D864C-86E1-4E58-9160-CA31F14EF6F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

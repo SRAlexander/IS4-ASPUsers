@@ -85,6 +85,30 @@ namespace IS4Server
                     },
                     AllowOfflineAccess = true
                 },
+                new Client
+                {
+                    ClientId = "rest",
+                    ClientName = "REST API",
+                    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
+
+                    RequireConsent = false,
+                    AllowAccessTokensViaBrowser = true,
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+
+                    RedirectUris = {"https://localhost:44305/signin-oidc"},
+                    PostLogoutRedirectUris = {"https://localhost:44305/signout-callback-oidc"},
+
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api1"
+                    },
+                    AllowOfflineAccess = true
+                },
 
                 new Client
                 {
